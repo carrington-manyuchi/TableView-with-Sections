@@ -13,6 +13,7 @@
 		238899E129AA15A8006A7859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238899DF29AA15A8006A7859 /* Main.storyboard */; };
 		238899E329AA15AA006A7859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238899E229AA15AA006A7859 /* Assets.xcassets */; };
 		238899E629AA15AA006A7859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238899E429AA15AA006A7859 /* LaunchScreen.storyboard */; };
+		238899EE29AA1613006A7859 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238899ED29AA1613006A7859 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		238899E229AA15AA006A7859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		238899E529AA15AA006A7859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		238899E729AA15AA006A7859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		238899ED29AA1613006A7859 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				238899DB29AA15A8006A7859 /* SceneDelegate.swift */,
 				238899DD29AA15A8006A7859 /* ViewController.swift */,
 				238899DF29AA15A8006A7859 /* Main.storyboard */,
+				238899ED29AA1613006A7859 /* Data.swift */,
 				238899E229AA15AA006A7859 /* Assets.xcassets */,
 				238899E429AA15AA006A7859 /* LaunchScreen.storyboard */,
 				238899E729AA15AA006A7859 /* Info.plist */,
@@ -140,6 +143,7 @@
 				238899DE29AA15A8006A7859 /* ViewController.swift in Sources */,
 				238899DA29AA15A8006A7859 /* AppDelegate.swift in Sources */,
 				238899DC29AA15A8006A7859 /* SceneDelegate.swift in Sources */,
+				238899EE29AA1613006A7859 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
