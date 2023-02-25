@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Aei-NY-VYC">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="GS2-bd-6Wi">
@@ -34,14 +34,21 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="FS6-em-T1W"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ki8-rR-imP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ki8-rR-imP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Gj-sG-g4a"/>
+                            <constraint firstItem="Aei-NY-VYC" firstAttribute="top" secondItem="ki8-rR-imP" secondAttribute="bottom" id="1Vw-Ks-I0X"/>
                             <constraint firstItem="Aei-NY-VYC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EEu-N0-MTV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Aei-NY-VYC" secondAttribute="bottom" id="SWz-tf-LBw"/>
+                            <constraint firstItem="ki8-rR-imP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T9g-j7-4tU"/>
+                            <constraint firstAttribute="trailing" secondItem="ki8-rR-imP" secondAttribute="trailing" id="ZvM-gH-RRg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aei-NY-VYC" secondAttribute="trailing" id="nAJ-ZR-A7a"/>
-                            <constraint firstItem="Aei-NY-VYC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sLn-qz-d6S"/>
                         </constraints>
                     </view>
                     <connections>
@@ -50,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="89"/>
+            <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>

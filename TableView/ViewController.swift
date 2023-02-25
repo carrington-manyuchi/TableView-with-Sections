@@ -22,6 +22,9 @@ class ViewController: UIViewController {
         TableData(sectionType: "Vegetables", sectionName: ["Carrots", "Onions","Chillies","Tomato", "Carrots", "Onions"])
     ]
     
+    var searchingNames = [String]()
+    var searching = false
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -70,7 +73,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return 50
     }
     
-   
-    
-    
 }
+
+
+
