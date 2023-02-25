@@ -11,9 +11,15 @@ class ViewController: UIViewController {
     
     
     var data = [
-        TableData(sectionType: "Animals", sectionName: ["Rabbit", "Cat", "Horse", "Dog"]),
+        TableData(sectionType: "Animals", sectionName: ["Rabbit", "Cat", "Horse", "Dog", "Rabbit", "Cat", "Horse", "Dog"]),
+        TableData(sectionType: "Electronics", sectionName: ["TV", "Radio", "Computer", "Heater", "TV", "Radio", "Heater"]),
+        TableData(sectionType: "Vegetables", sectionName: ["Carrots", "Onions","Chillies","Tomato", "Carrots", "Onions"]),
+        TableData(sectionType: "Animals", sectionName: ["Rabbit", "Cat", "Horse", "Dog","Rabbit", "Cat", "Horse", "Dog"]),
         TableData(sectionType: "Electronics", sectionName: ["TV", "Radio", "Computer", "Heater"]),
-        TableData(sectionType: "Vegetables", sectionName: ["Carrots", "Onions","Chillies","Tomato"])
+        TableData(sectionType: "Vegetables", sectionName: ["Carrots", "Onions","Chillies","Tomato"]),
+        TableData(sectionType: "Animals", sectionName: ["Rabbit", "Cat", "Horse", "Dog", "Rabbit", "Cat", "Horse", "Dog"]),
+        TableData(sectionType: "Electronics", sectionName: ["TV", "Radio", "Computer", "Heater", "TV", "Radio", "Heater"]),
+        TableData(sectionType: "Vegetables", sectionName: ["Carrots", "Onions","Chillies","Tomato", "Carrots", "Onions"])
     ]
     
     @IBOutlet weak var tableView: UITableView!
@@ -47,8 +53,22 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
     
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = .orange
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        view.backgroundColor = .cyan
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(data[indexPath.section].sectionName[indexPath.row]!) is Tapped")
+    }
     
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
     
    
     
